@@ -1,0 +1,25 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+:root{
+
+
+    // default layout
+    --default-layout-height:60px;
+    --default-layout-width:1150px
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+}
