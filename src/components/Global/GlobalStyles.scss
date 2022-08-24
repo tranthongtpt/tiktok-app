@@ -5,6 +5,7 @@
     --text-color:#333;
     --black:#000;
     --primary:#fe2c55;
+    --white:#fff;
 
     // default layout
     --default-layout-height:60px;
@@ -17,7 +18,7 @@
     box-sizing: border-box;
 }
 html{
-    
+    font-size: 62.5%;
 }
 
 body{
