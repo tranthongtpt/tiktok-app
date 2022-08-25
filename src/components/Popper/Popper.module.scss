@@ -1,4 +1,6 @@
 .wrapper{
+    display: grid;
+    
     width: 100%;
     max-height: min((100vh - 96px) - 60px,734px);
     min-height: 100px;
@@ -7,3 +9,13 @@
     background: rgb(255,255,255);
     box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
 }
+// .wrapper a:nth-child(n){
+//     margin-left: 0;
+//     margin-left: 0;
+// }
+// .wrapper button:nth-child(n){
+//     margin-left: 0;
+// }
+// .wrapper button:nth-child(2n){
+//     margin-left: 0;
+// }
