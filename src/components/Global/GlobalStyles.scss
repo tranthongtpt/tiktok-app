@@ -1,39 +1,64 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
 
-:root{
-    --text-color:#333;
-    --black:#000;
-    --primary:#fe2c55;
-    --white:#fff;
+:root {
+    --text-color: #333;
+    --black: #000;
+    --primary: #fe2c55;
+    --white: #fff;
 
     // default layout
-    --default-layout-height:60px;
-    --default-layout-width:1150px
-    
+    --default-layout-height: 60px;
+    --default-layout-width: 1150px
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
 
-body{
-    font-family: 'Roboto',sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
     color: var(--text-color);
 }
-button,input,[tabindex]{
+
+button,
+input,
+[tabindex] {
     outline: none;
     border: none;
 }
-a[href]{
+
+a[href] {
     color: var(--text-color);
     text-decoration: none;
-    
+
+}
+
+//custom tippyjs
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 22px;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+    .tippy-arrow{
+        color: rgba(84, 84, 84, 0.92);
+    }
+    .tippy-content{
+        padding: 8px 9px;
+    }
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow::before{
+        top:-8px;
+    }
 }
