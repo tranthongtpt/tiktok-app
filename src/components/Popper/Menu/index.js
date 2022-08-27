@@ -31,6 +31,7 @@ function Menu({children,items=[],onChange= defaultFn}) {
     return (  
         <Tippy 
             delay={[0,500]}
+            offset={[10,10]} 
             interactive
             placement="bottom-end"
             render={(attrs) =>(

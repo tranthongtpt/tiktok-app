@@ -14,6 +14,7 @@ function MenuItem({data,onClick}) {
             {data.title}
         </Button>
      );
+     
 }
 
 export default MenuItem;

@@ -11,7 +11,7 @@ import { Wrapper as PopperWrapper } from '../../../Popper';
 import AccountItem from '../../../Popper/AccountItem';
 import Button from '../../../Button';
 import Menu from '../../../Popper/Menu';
-
+import Image from '../../../Image';
 const cx = classNames.bind(styles)
 
 const MENU_ITEMS = [
@@ -144,7 +144,11 @@ function Header() {
 
                 <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuchange}>
                     {currentUser ? (
-                        <img className={cx('user-avatar')} alt='nguyen van a' src='https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/b2f6128920dc686fa91dd2c4dcb6a92d~c5_100x100.jpeg?x-expires=1661677200&x-signature=KWoqpABDkvObsdW0opjb5EFpos4%3D'/>
+                        <Image 
+                        className={cx('user-avatar')} 
+                        alt='nguyen van a' 
+                        src='https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/b2f6128920dc686fa91dd2c4dcb6a92d~c5_100x100.jpeg?x-expires=1661677200&x-signature=KWoqpABDkvObsdW0opjb5EFpos4%3D'
+                        />
                     ) : (
                         <button className={cx('more-btn')}>
                             <FontAwesomeIcon icon={faEllipsisVertical}/>
